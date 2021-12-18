@@ -1,0 +1,354 @@
+/*html,body  {
+    box-sizing:border-box;
+		display: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}*/
+
+.container {
+	/*display: block;*/
+	height: 600px;
+	width: 400px;
+  background-color: #FF6D2D;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+	/*background-size: 100%;*/
+	border: 15px solid #F6EFDE; margin: 15px;
+}
+/*font-family: 'Libre Caslon Text', serif;*/
+
+
+@keyframes AName_fade{
+	20%    {    opacity:   0;  }
+	80%  {     opacity:  3; color:red;  }
+	100%  {     opacity:  1; color:black;  }
+}
+
+.AName {
+ opacity: 0;
+ animation: AName_fade 4s;
+ animation-fill-mode: forwards;
+ position: relative;
+ top: 80px;
+ left: 110px;
+ font-family: 'Libre Caslon Text', serif;
+ font-size: 28px;
+}
+
+
+
+
+/*@keyframes ALast_fade{
+	0%    {    opacity:   0;  }
+  100%  {     opacity:  1;  }
+
+}
+.ALast {
+ animation: ALast_fade 3s;
+ position: relative;
+ top: 55px;
+ left: 205px;
+ font-family: 'Libre Caslon Text', serif;
+ font-size: 28px;
+}*/
+
+@keyframes ALast_move {
+	0%   { top: 0px;color:green; }
+ 50%  { top: 150px;color:blue; }
+ 100% { top: 50px; }
+
+}
+.ALast {
+ animation: ALast_move 3s;
+ position: relative;
+ top: 55px;
+ left: 205px;
+ font-family: 'Libre Caslon Text', serif;
+ font-size: 28px;
+}
+
+
+/*@keyframes Title_fade{
+	0%   {    opacity:   0;  }
+  100%  {     opacity:  1;  }
+
+}
+.Title {
+ animation: Title_fade 3s;
+ position: relative;
+ top: 60px;
+ left: 50px;
+ font-family: 'Libre Caslon Text', serif;
+ font-size: 90px;
+}*/
+@keyframes Title_move{
+	0%,100% { top: 0px; left: 50px; color:green; }
+	 25%   { top: -50px; left: 50px; color:yellow; }
+	 50%   { top: 150px; left: 50px; color:red; }
+	 75%   { top: 200px; left:50px; color:black;}
+
+}
+.Title {
+ animation: Title_move 4s;
+ position: relative;
+ top: 60px;
+ left: 50px;
+ font-family: 'Libre Caslon Text', serif;
+ font-size: 90px;
+}
+
+
+
+@keyframes bigdrop_move {
+  0%, 45%  { top: 36%; left: 37%; }
+  50%   { top: 60%; left: 37%; }
+  75%		{ top: 70%; left: 37%; }
+	85%		{ top: 90%; left: 37%; }
+	100%	{top: 100%; left: 37%; }
+
+
+}
+
+
+.bigdrop{
+ position: absolute;
+ top: 40%;
+ left: 37%;
+ animation: bigdrop_move 4s infinite;
+
+}
+
+@keyframes rotate {
+	 0%, 19%  { transform: rotate(0deg);}
+	 20%, 25%  { transform: rotate(0deg); opacity: 100%; }
+   40%, 65%  { transform: rotate(0deg); opacity: 100%; }
+	 100% { transform: rotate(360deg); }
+
+}
+
+.bigdrop2{
+ position: absolute;
+ top: 35%;
+ left: 37%;
+
+
+ animation: rotate 6s infinite;
+
+}
+
+@keyframes middledrop_move {
+  0%, 10%  { top: 15%; left: 41%; }
+  60%   { top: 30%; left: 41%; opacity: 0%}
+  75%		{ top: 80%; left: 41%;opacity: 0%; }
+	85%		{ top: 90%; left: 41%; }
+	100%	{ top: 100%; left: 41%; }
+
+
+}
+.middledrop{
+ position: relative;
+ top: 10%;
+ left: 41%;
+ animation: middledrop_move 4s   infinite ;
+
+}
+@keyframes middledrop5_move {
+  0%, 50%  { top: 43%; left: 41%; }
+  60%   { top: 60%; left: 41%; }
+  85%		{ top: 70%; left: 41%; }
+	95%		{ top: 90%; left: 41%; }
+	100%	{top: 100%; left: 41%; }
+
+
+}
+
+
+.middledrop5{
+ position: absolute;
+ top: 43%;
+ left: 41%;
+ animation: middledrop5_move 4s infinite;
+animation-iteration-count: 2;
+}
+
+
+@keyframes rotate {
+	 20%, 25%  { transform: rotate(0deg); opacity: 0%; }
+   40%, 65%  { transform: rotate(0deg); opacity: 80%; }
+	 100% { transform: rotate(360deg); }
+
+}
+
+.middledrop4{
+ position: absolute;
+ top: 42%;
+ left: 41%;
+
+
+
+ animation: rotate 6s infinite;
+}
+
+@keyframes middledrop2_move {
+	0%, 5%  { top: 50%; left: 51%;opacity: 0%; }
+  20%   { top: 20%; left: 35%;opacity: 90%; }
+  75%		{ top: 40%; left: 25%;opacity: 100%; }
+	85%		{ top: 50%; left: 15%; }
+	100%	{ top: 100%; left: 10%; }
+
+
+}
+.middledrop2{
+ position: absolute;
+ top: 50px;
+ left: 50%;
+
+ animation: middledrop2_move 6s   infinite;
+}
+
+@keyframes middledrop3_move {
+	0%, 5%  { top: 15%; left: 41%;opacity: 0%; }
+  20%   { top: 15%; left: 55%;opacity: 90%; }
+  75%		{ top: 18%; left: 65%;opacity: 100%; }
+	85%		{ top: 20%; left: 75%; }
+	100%	{ top: 100%; left: 80%; }
+
+
+}
+.middledrop3{
+ position: relative;
+ top: -50%;
+ left: 0%;
+
+ animation: middledrop3_move 6s   infinite;
+}
+
+
+
+
+
+@keyframes smalldrop_move {
+  0%    { top: 0%; left: 41%; }
+  30%   { top: 30%; left: 41%; }
+  75%		{ top: 80%; left: 41%; }
+	85%		{ top: 90%; left: 41%; }
+	100%	{ top: 100%; left: 41%; }
+
+
+}
+.smalldrop{
+ position: relative;
+ top: 0%;
+ left: 41%;
+ animation: smalldrop_move 2s   infinite ease-in-out;
+
+
+
+}
+@keyframes rotate {
+	 20%, 25%  { transform: rotate(0deg);  }
+   40%, 65%  { transform: rotate(0deg);  }
+	 100% { transform: rotate(360deg); }
+
+}
+.smalldrop2{
+	position: absolute;
+	top: 43%;
+	left: 41%;
+animation: rotate 6s infinite ;
+
+}
+
+@keyframes smalldrop3_move {
+  0%    { top: 0%; left: 41%; }
+  30%   { top: 30%; left: 41%; }
+  75%		{ top: 80%; left: 41%; }
+	85%		{ top: 90%; left: 41%; }
+	100%	{ top: 100%; left: 41%; }
+
+
+}
+.smalldrop3{
+ position: relative;
+ top: 0%;
+ left: 41%;
+ animation: smalldrop3_move 2s   infinite ease-in-out;
+
+
+
+}
+
+
+
+@keyframes smalldrop4_move {
+  0%    { top: 0%; left: 15%; }
+  30%   { top: 30%; left: 15%; }
+  75%		{ top: 80%; left: 15%; }
+	85%		{ top: 90%; left: 15%; }
+	100%	{ top: 100%; left: 15%; }
+
+
+}
+.smalldrop4{
+ position: absolute;
+ top: 0%;
+ left: 15%;
+animation-delay: 5s;
+ animation: smalldrop4_move 2s   infinite ease-in-out;
+
+
+
+}
+
+
+
+
+
+
+
+@keyframes smalldrop5_move {
+  0%    { top: 0%; left: 75%; }
+  30%   { top: 30%; left: 75%; }
+  75%		{ top: 80%; left: 75%; }
+	85%		{ top: 90%; left: 75%; }
+	100%	{ top: 100%; left: 75%; }
+
+
+}
+.smalldrop5{
+ position: absolute;
+ top: 0%;
+ left: 75%;
+animation-delay: 5s;
+ animation: smalldrop5_move 2s   infinite ease-in-out;
+
+
+
+}
+/*.bigdrop{
+	position: absolute;
+	top:36%;
+	left: 37%;
+}
+.middledrop{
+	position: absolute;
+	top:43%;
+	left: 41%;
+}
+
+.smalldrop{
+	position: absolute;
+	top:45%;
+	left: 42%;
+}
+/*@keyframes bigdrop {
+from {background-color:#F90606;}
+to{background-color:#FEE704;}
+
+}*/
